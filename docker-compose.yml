@@ -4,8 +4,9 @@ services:
   app:
     build:
       context: .
+      dockerfile: Dockerfile
       args:
-        - DEV=true
+        DEV: "true"
     ports:
       - "8000:8000"
     volumes:
